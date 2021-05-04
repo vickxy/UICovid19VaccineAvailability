@@ -36,7 +36,7 @@ const CustomForm = () => {
             Accept: "application/json",
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({    state_id: stateId})
+          body: JSON.stringify({ state_id: stateId })
         }
       );
       const content = await rawResponse.json();
