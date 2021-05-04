@@ -43,7 +43,8 @@ const CustomForm = () => {
       if(content?.status === 200){
         let districts = content?.data?.districts;
         districts = districts.map(d => {
-          let a = { value: d.district_id, label: d.district_name}
+          let districtID = d.district_id;
+          let a = { value: districtID.toString(), label: d.district_name}
           return a;
         });
         setDistrictList(districts)
