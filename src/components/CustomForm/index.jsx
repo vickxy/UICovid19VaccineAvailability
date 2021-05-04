@@ -4,7 +4,7 @@ import { registerSchema } from "./formValidation";
 import SelectInput from "../common/SelectInput";
 import FormInput from "../common/FormInput";
 import { ageGroupList, stateList } from "../../constants/common";
-import { apiEndpoint } from "../../constants/env";
+import { apiBaseUrl } from "../../constants/env";
 
 const formIinitialValues = {
   name: "",
@@ -30,7 +30,7 @@ const CustomForm = () => {
 
   const getDistrictList = async (stateId) => {
     if(stateId){
-      const rawResponse = await fetch(`${apiEndpoint}/districts`, {
+      const rawResponse = await fetch(`${apiBaseUrl}/districts`, {
           method: "POST",
           headers: {
             Accept: "application/json",
@@ -77,7 +77,7 @@ const CustomForm = () => {
               payload.dist_id = values.district?.value;
             }
 
-            const rawResponse = await fetch(`${apiEndpoint}/userinfo`, {
+            const rawResponse = await fetch(`${apiBaseUrl}/userinfo`, {
               method: "POST",
               headers: {
                 Accept: "application/json",
