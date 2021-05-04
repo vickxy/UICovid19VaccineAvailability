@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/vaccine-availability/static/css/main.f15c9e5e.chunk.css",
-    "main.js": "/vaccine-availability/static/js/main.a5623122.chunk.js",
-    "main.js.map": "/vaccine-availability/static/js/main.a5623122.chunk.js.map",
-    "runtime-main.js": "/vaccine-availability/static/js/runtime-main.7f2833c2.js",
-    "runtime-main.js.map": "/vaccine-availability/static/js/runtime-main.7f2833c2.js.map",
-    "static/css/2.9233ae65.chunk.css": "/vaccine-availability/static/css/2.9233ae65.chunk.css",
-    "static/js/2.3b8c31a9.chunk.js": "/vaccine-availability/static/js/2.3b8c31a9.chunk.js",
-    "static/js/2.3b8c31a9.chunk.js.map": "/vaccine-availability/static/js/2.3b8c31a9.chunk.js.map",
-    "index.html": "/vaccine-availability/index.html",
-    "precache-manifest.8845a42638048b6f7d419f84afcc9017.js": "/vaccine-availability/precache-manifest.8845a42638048b6f7d419f84afcc9017.js",
-    "service-worker.js": "/vaccine-availability/service-worker.js",
-    "static/css/2.9233ae65.chunk.css.map": "/vaccine-availability/static/css/2.9233ae65.chunk.css.map",
-    "static/css/main.f15c9e5e.chunk.css.map": "/vaccine-availability/static/css/main.f15c9e5e.chunk.css.map",
-    "static/js/2.3b8c31a9.chunk.js.LICENSE.txt": "/vaccine-availability/static/js/2.3b8c31a9.chunk.js.LICENSE.txt"
+    "main.css": "/vaccine-availability-covid19/static/css/main.f15c9e5e.chunk.css",
+    "main.js": "/vaccine-availability-covid19/static/js/main.effaeb19.chunk.js",
+    "main.js.map": "/vaccine-availability-covid19/static/js/main.effaeb19.chunk.js.map",
+    "runtime-main.js": "/vaccine-availability-covid19/static/js/runtime-main.8380c7da.js",
+    "runtime-main.js.map": "/vaccine-availability-covid19/static/js/runtime-main.8380c7da.js.map",
+    "static/css/2.9233ae65.chunk.css": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css",
+    "static/js/2.3b8c31a9.chunk.js": "/vaccine-availability-covid19/static/js/2.3b8c31a9.chunk.js",
+    "static/js/2.3b8c31a9.chunk.js.map": "/vaccine-availability-covid19/static/js/2.3b8c31a9.chunk.js.map",
+    "index.html": "/vaccine-availability-covid19/index.html",
+    "precache-manifest.921d3ee8242d050aff9de4d90afdf026.js": "/vaccine-availability-covid19/precache-manifest.921d3ee8242d050aff9de4d90afdf026.js",
+    "service-worker.js": "/vaccine-availability-covid19/service-worker.js",
+    "static/css/2.9233ae65.chunk.css.map": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css.map",
+    "static/css/main.f15c9e5e.chunk.css.map": "/vaccine-availability-covid19/static/css/main.f15c9e5e.chunk.css.map",
+    "static/js/2.3b8c31a9.chunk.js.LICENSE.txt": "/vaccine-availability-covid19/static/js/2.3b8c31a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f2833c2.js",
+    "static/js/runtime-main.8380c7da.js",
     "static/css/2.9233ae65.chunk.css",
     "static/js/2.3b8c31a9.chunk.js",
     "static/css/main.f15c9e5e.chunk.css",
-    "static/js/main.a5623122.chunk.js"
+    "static/js/main.effaeb19.chunk.js"
   ]
 }
