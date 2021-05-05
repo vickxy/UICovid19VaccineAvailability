@@ -6,7 +6,7 @@ import FormInput from "../common/FormInput";
 import { ageGroupList, stateList } from "../../constants/common";
 import { apiBaseUrl } from "../../constants/env";
 
-const formIinitialValues = {
+const formInitialValues = {
   name: "",
   age: "",
   email: "",
@@ -17,7 +17,7 @@ const formIinitialValues = {
 };
 
 const CustomForm = () => {
-  const [initialValues, setInitialValues] = useState({...formIinitialValues});
+  const [initialValues, setInitialValues] = useState({...formInitialValues});
   const [districtList, setDistrictList] = useState([]);
 
   const handleSelectChange = (setFieldValue, key, selectedOption, ) => {
@@ -60,8 +60,8 @@ const CustomForm = () => {
   }, [initialValues.state]);
 
   return (
-    <div className="container-fluid col-md-6">
-      <div className="form-wrapper">
+    <div>
+      <div className="box1 form-wrapper">
         <Formik
           initialValues={initialValues}
           validationSchema={registerSchema}
@@ -89,6 +89,8 @@ const CustomForm = () => {
             console.log(response);
             if(response?.status === 200){
               window.alert(response.data);
+              actions.resetForm({});
+              setInitialValues({...formInitialValues})
             }
             else{
               window.alert('Something Went Wrong!')
