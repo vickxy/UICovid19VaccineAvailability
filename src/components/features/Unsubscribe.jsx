@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Formik } from "formik";
 import FormInput from "../common/FormInput";
 import { apiBaseUrl } from "../../constants/env";
+import Button from "../common/Button";
 
 const formIinitialValues = {
   email: "",
@@ -15,25 +16,27 @@ const Unsubscribe= () => {
         <Formik
           initialValues={initialValues}
           onSubmit={async (values, actions) => {
-            const payload = {};
-            payload.email = values.email;
-            console.log("foo")
-            const rawResponse = await fetch(`${apiBaseUrl}/unsubscribe`, {
-              method: "POST",
-              headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify({...payload})
-            });
-            const response = await rawResponse.json();
-            console.log(response);
-            if(response?.status === 400){
-              window.alert(response.data);
-              actions.resetForm({});
-            }
-            else{
-              window.alert('Something Went Wrong!')
+            if(values.email) {
+              const payload = {};
+              payload.email = values.email;
+              console.log("foo")
+              const rawResponse = await fetch(`${apiBaseUrl}/unsubscribe`, {
+                method: "POST",
+                headers: {
+                  Accept: "application/json",
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify({...payload})
+              });
+              const response = await rawResponse.json();
+              console.log(response);
+              if(response?.status === 400){
+                window.alert(response.data);
+                actions.resetForm({});
+              }
+              else{
+                window.alert('Something Went Wrong!')
+              }
             }
           }}
         >
@@ -47,7 +50,10 @@ const Unsubscribe= () => {
                 type="email"
               />
               <br/>
-              <button type="submit" className="btn btn-primary">Unsubscribe from Mail</button>
+              {/* <button type="submit" className="btn btn-primary custom-btn">Unsubscribe from Mail</button> */}
+              <Button
+                content="Revoke"
+              />
             </form>
           )}
         </Formik>
