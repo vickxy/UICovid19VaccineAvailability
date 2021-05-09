@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/vaccine-availability-covid19/static/css/main.7eaec3a9.chunk.css",
-    "main.js": "/vaccine-availability-covid19/static/js/main.1b9aaa0f.chunk.js",
-    "main.js.map": "/vaccine-availability-covid19/static/js/main.1b9aaa0f.chunk.js.map",
+    "main.js": "/vaccine-availability-covid19/static/js/main.7316efed.chunk.js",
+    "main.js.map": "/vaccine-availability-covid19/static/js/main.7316efed.chunk.js.map",
     "runtime-main.js": "/vaccine-availability-covid19/static/js/runtime-main.8380c7da.js",
     "runtime-main.js.map": "/vaccine-availability-covid19/static/js/runtime-main.8380c7da.js.map",
     "static/css/2.9233ae65.chunk.css": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css",
-    "static/js/2.475cc5a4.chunk.js": "/vaccine-availability-covid19/static/js/2.475cc5a4.chunk.js",
-    "static/js/2.475cc5a4.chunk.js.map": "/vaccine-availability-covid19/static/js/2.475cc5a4.chunk.js.map",
+    "static/js/2.e149617f.chunk.js": "/vaccine-availability-covid19/static/js/2.e149617f.chunk.js",
+    "static/js/2.e149617f.chunk.js.map": "/vaccine-availability-covid19/static/js/2.e149617f.chunk.js.map",
     "index.html": "/vaccine-availability-covid19/index.html",
-    "precache-manifest.4fd37e502706b13e990456a008d0fecb.js": "/vaccine-availability-covid19/precache-manifest.4fd37e502706b13e990456a008d0fecb.js",
+    "precache-manifest.fb33d63afef376aa390e380534d79bfa.js": "/vaccine-availability-covid19/precache-manifest.fb33d63afef376aa390e380534d79bfa.js",
     "service-worker.js": "/vaccine-availability-covid19/service-worker.js",
     "static/css/2.9233ae65.chunk.css.map": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css.map",
     "static/css/main.7eaec3a9.chunk.css.map": "/vaccine-availability-covid19/static/css/main.7eaec3a9.chunk.css.map",
-    "static/js/2.475cc5a4.chunk.js.LICENSE.txt": "/vaccine-availability-covid19/static/js/2.475cc5a4.chunk.js.LICENSE.txt"
+    "static/js/2.e149617f.chunk.js.LICENSE.txt": "/vaccine-availability-covid19/static/js/2.e149617f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8380c7da.js",
     "static/css/2.9233ae65.chunk.css",
-    "static/js/2.475cc5a4.chunk.js",
+    "static/js/2.e149617f.chunk.js",
     "static/css/main.7eaec3a9.chunk.css",
-    "static/js/main.1b9aaa0f.chunk.js"
+    "static/js/main.7316efed.chunk.js"
   ]
 }
