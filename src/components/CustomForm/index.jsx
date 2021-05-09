@@ -5,6 +5,7 @@ import SelectInput from "../common/SelectInput";
 import FormInput from "../common/FormInput";
 import { ageGroupList, stateList, vaccinePrefList } from "../../constants/common";
 import { apiBaseUrl } from "../../constants/env";
+import Button from "../common/Button";
 
 const formInitialValues = {
   name: "",
@@ -138,11 +139,11 @@ const CustomForm = () => {
               <div role="group" aria-labelledby="mode">
                 <label>
                   <Field type="radio" name="mode" value="1" />
-                  Pincode
+                  {' '}Pincode
                 </label>{' '}
                 <label>
                   <Field type="radio" name="mode" value="2" />
-                  District
+                  {' '}District
                 </label>
               </div>
               <ErrorMessage
@@ -153,7 +154,7 @@ const CustomForm = () => {
 
               { props.values.mode === "1" && 
                 <>
-                  <label htmlFor="age">Pincode</label>
+                  <label htmlFor="pincode">Pincode</label>
                   <FormInput
                     id="pincode"
                     name="pincode"
@@ -187,7 +188,7 @@ const CustomForm = () => {
                 </> 
               }
               <br/>
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <Button content="Notify me"/>
             </form>
           )}
         </Formik>

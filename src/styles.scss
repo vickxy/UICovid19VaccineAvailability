@@ -14,14 +14,24 @@ body {
 
 // Common
 .box1 {
-  margin: 30px;
+  margin: 20px;
   padding: 30px;
   border-radius: 10px;
 }
 .box2 {
-  margin: 30px;
-  padding: 20px;
+  margin: 20px;
+  padding: 12px 30px;
   border-radius: 10px;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.custom-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 // CustomForm
