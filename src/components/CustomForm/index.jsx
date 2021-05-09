@@ -3,13 +3,14 @@ import { Formik, Field, ErrorMessage } from "formik";
 import { registerSchema } from "./formValidation";
 import SelectInput from "../common/SelectInput";
 import FormInput from "../common/FormInput";
-import { ageGroupList, stateList } from "../../constants/common";
+import { ageGroupList, stateList, vaccinePrefList } from "../../constants/common";
 import { apiBaseUrl } from "../../constants/env";
 
 const formInitialValues = {
   name: "",
   age: "",
   email: "",
+  vaccinePref: "",
   mode: "",
   state: "",
   district: "",
@@ -70,6 +71,7 @@ const CustomForm = () => {
             payload.name = values.name;
             payload.email = values.email;
             payload.age = values.age?.value;
+            payload.vaccinePref = values.vaccinePref?.value || "";
             payload.mode = parseInt(values.mode);
             if(payload.mode===1){
               payload.pincode = values.pincode;
@@ -120,6 +122,16 @@ const CustomForm = () => {
                 name="email"
                 placeholder="Enter your Email"
                 type="email"
+              />
+
+              <label htmlFor="vaccine">Vaccine Preference</label>
+              <SelectInput
+                placeholder="Select your vaccine"
+                value={initialValues?.vaccinePref}
+                onChange={(selectedOption) =>{
+                  handleSelectChange(props.setFieldValue, "vaccinePref", selectedOption);
+                }}
+                options={vaccinePrefList}
               />
 
               <div id="my-radio-group">Mode</div>

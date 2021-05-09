@@ -6,6 +6,11 @@ export const ageGroupList = [
   { value: 45, label: "45+" }
 ];
 
+export const vaccinePrefList = [
+  { value: "covaxin", label: "Covaxin" },
+  { value: "covishield", label: "Covishield" }
+]
+
 export const stateList = [
   {
     value: 1,

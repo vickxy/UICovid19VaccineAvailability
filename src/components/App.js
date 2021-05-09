@@ -18,7 +18,8 @@ const  App = () => {
       <Subsribers />
       <CustomForm />
       <Unsubscribe />
-      <div className="box2 withLove">Created by Vikesh with 🖤</div>
+      <div className="box2 withLove">
+        Created by <a href="https://github.com/vickxy" target="_blank" >Vikesh</a> with 🖤</div>
     </div>
   );
 }
