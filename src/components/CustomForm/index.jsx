@@ -10,9 +10,11 @@ import Button from "../common/Button";
 const formInitialValues = {
   name: "",
   age: "",
+  notifyOn: "email",
   email: "",
+  telegram: "",
   vaccinePref: "",
-  mode: "",
+  mode: "1",
   state: "",
   district: "",
   pincode: ""
@@ -70,7 +72,8 @@ const CustomForm = () => {
           onSubmit={async (values, actions) => {
             const payload = {};
             payload.name = values.name;
-            payload.email = values.email;
+            payload.notifyOn = values.notifyOn;
+            payload.email = payload.notifyOn === "email" ? values.email : values.telegram;
             payload.age = values.age?.value;
             payload.vaccinePref = values.vaccinePref?.value || "";
             payload.mode = parseInt(values.mode);
@@ -89,7 +92,6 @@ const CustomForm = () => {
               body: JSON.stringify({...payload})
             });
             const response = await rawResponse.json();
-            console.log(response);
             if(response?.status === 200){
               window.alert(response.data);
               actions.resetForm({});
@@ -106,7 +108,51 @@ const CustomForm = () => {
               <label htmlFor="name">Name</label>
               <FormInput id="name" name="name" placeholder="Enter your name" />
 
-              <label htmlFor="age">Age</label>
+              <div id="my-radio-group">Notify me on</div>
+              <div role="group" aria-labelledby="notifyOn">
+                <label>
+                  <Field type="radio" name="notifyOn" value="email" />
+                  {' '}Email
+                </label>{' '}
+                <label>
+                  <Field type="radio" name="notifyOn" value="telegram" />
+                  {' '}Telegram
+                </label>
+              </div>
+              <ErrorMessage
+                name="notifyOn"
+                component="div"
+                className="error-message"
+              />
+
+              { props.values.notifyOn === "email" && 
+                <>
+                  <label htmlFor="email">Email</label>
+                  <FormInput
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    type="email"
+                  />
+                </>
+              }
+              { props.values.notifyOn === "telegram" && 
+                <>
+                  <label htmlFor="email">
+                    Telegram Chat Id
+                    <span className="info"><a href="https://yadav-vikesh27.medium.com/how-to-get-telegram-chat-id-and-subscribe-vaccine-availability-a9adcead093e" target="_blank">
+                      {' '}how to get Telegram Chat Id?
+                    </a></span>
+                  </label>
+                  <FormInput
+                    id="telegraml"
+                    name="telegram"
+                    placeholder="Enter your Telegram Chat Id"
+                  />
+                </>
+              }
+
+              <label htmlFor="age">Age Group</label>
               <SelectInput
                 placeholder="Select Age Group"
                 value={initialValues?.age}
@@ -115,14 +161,6 @@ const CustomForm = () => {
                 }}
                 options={ageGroupList}
                 error={props.errors.age}
-              />
-
-              <label htmlFor="email">Email</label>
-              <FormInput
-                id="email"
-                name="email"
-                placeholder="Enter your Email"
-                type="email"
               />
 
               <label htmlFor="vaccine">Vaccine Preference</label>
@@ -147,10 +185,10 @@ const CustomForm = () => {
                 </label>
               </div>
               <ErrorMessage
-                      name="mode"
-                      component="div"
-                      className="error-message"
-                  />
+                name="mode"
+                component="div"
+                className="error-message"
+              />
 
               { props.values.mode === "1" && 
                 <>
@@ -159,7 +197,6 @@ const CustomForm = () => {
                     id="pincode"
                     name="pincode"
                     placeholder="Enter your pincode"
-                    type="pincode"
                   />
                 </> 
               }

@@ -38,6 +38,9 @@ body {
   flex-direction: row;
   align-items: space-between;
 }
+.info {
+  font-size: 12px;
+}
 
 // CustomForm
 .form-wrapper {
@@ -48,6 +51,7 @@ body {
 // FormInput
 .error-message {
   color: red;
+  font-size: 12px;
 }
 
 // Subscribe

@@ -14,7 +14,6 @@ const  Subsribers = () => {
       }
     });
     const response = await rawResponse.json();
-    console.log(response);
     if(response?.status === 200){
       setSubscribedUsers(response.data);
     }

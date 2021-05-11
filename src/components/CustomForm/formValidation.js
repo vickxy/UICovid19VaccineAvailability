@@ -8,9 +8,10 @@ export const registerSchema = Yup.object().shape({
     .required("Please enter a valid Name")
     .min(3, "First name is too short (minimum is 3 characters)"),
   age: Yup.object().required("Please select valid age group"),
-  email: Yup.string()
-    .email("Please enter a valid email address")
-    .required("Email is required"),
+  notifyOn: Yup.string().required("Notification mode is mandatory"),
+  // email: Yup.string()
+  //   .email("Please enter a valid email address")
+  //   .required("Email is required"),
   mode: Yup.number().required("Mode is mandatory"),
   // pincode:Yup.string().when('mode', {
   //   is: '1',

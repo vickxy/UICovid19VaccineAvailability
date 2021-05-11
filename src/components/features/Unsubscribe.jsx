@@ -19,7 +19,6 @@ const Unsubscribe= () => {
             if(values.email) {
               const payload = {};
               payload.email = values.email;
-              console.log("foo")
               const rawResponse = await fetch(`${apiBaseUrl}/unsubscribe`, {
                 method: "POST",
                 headers: {
@@ -29,7 +28,6 @@ const Unsubscribe= () => {
                 body: JSON.stringify({...payload})
               });
               const response = await rawResponse.json();
-              console.log(response);
               if(response?.status === 400){
                 window.alert(response.data);
                 actions.resetForm({});

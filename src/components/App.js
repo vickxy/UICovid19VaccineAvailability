@@ -3,7 +3,7 @@ import "../../src/styles.scss";
 import CustomForm from "./CustomForm";
 import Unsubscribe from "./features/Unsubscribe";
 import Subsribers from "./features/Subsribers";
-import bmcButton from "../assets/bmc-button.png";
+import Coffee from "./features/Coffee";
 
 const  App = () => {
   return (
@@ -18,16 +18,11 @@ const  App = () => {
       </div>
       <Subsribers />
       <CustomForm />
+      <Coffee />
       <Unsubscribe />
       <div className="box2 text-center">
-        Created by <a href="https://github.com/vickxy" target="_blank" >Vikesh</a> with 🖤
+        Created by <a href="https://github.com/vickxy" target="_blank">Vikesh</a> with 🖤
       </div>
-      <div className="box2 text-center">
-        <a href="https://www.buymeacoffee.com/vikesh" target="_blank" >
-          <img src={bmcButton} alt="Buy me a Coffee" width="140" height="40" />
-        </a>
-      </div>
-
     </div>
   );
 }
