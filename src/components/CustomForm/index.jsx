@@ -139,15 +139,15 @@ const CustomForm = () => {
               { props.values.notifyOn === "telegram" && 
                 <>
                   <label htmlFor="email">
-                    Telegram Chat Id
+                    Telegram Chat ID
                     <span className="info"><a href="https://yadav-vikesh27.medium.com/how-to-get-telegram-chat-id-and-subscribe-vaccine-availability-a9adcead093e" target="_blank">
-                      {' '}how to get Telegram Chat Id?
+                      {' '}How to get Telegram Chat ID?
                     </a></span>
                   </label>
                   <FormInput
                     id="telegraml"
                     name="telegram"
-                    placeholder="Enter your Telegram Chat Id"
+                    placeholder="Enter your Telegram Chat ID"
                   />
                 </>
               }
