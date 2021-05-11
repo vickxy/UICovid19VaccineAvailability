@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/vaccine-availability-covid19/static/css/main.13e3f3db.chunk.css",
-    "main.js": "/vaccine-availability-covid19/static/js/main.ea8232b4.chunk.js",
-    "main.js.map": "/vaccine-availability-covid19/static/js/main.ea8232b4.chunk.js.map",
+    "main.css": "/vaccine-availability-covid19/static/css/main.a8ee74d1.chunk.css",
+    "main.js": "/vaccine-availability-covid19/static/js/main.62a2d351.chunk.js",
+    "main.js.map": "/vaccine-availability-covid19/static/js/main.62a2d351.chunk.js.map",
     "runtime-main.js": "/vaccine-availability-covid19/static/js/runtime-main.8380c7da.js",
     "runtime-main.js.map": "/vaccine-availability-covid19/static/js/runtime-main.8380c7da.js.map",
     "static/css/2.9233ae65.chunk.css": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css",
-    "static/js/2.9678368d.chunk.js": "/vaccine-availability-covid19/static/js/2.9678368d.chunk.js",
-    "static/js/2.9678368d.chunk.js.map": "/vaccine-availability-covid19/static/js/2.9678368d.chunk.js.map",
+    "static/js/2.1bb7e909.chunk.js": "/vaccine-availability-covid19/static/js/2.1bb7e909.chunk.js",
+    "static/js/2.1bb7e909.chunk.js.map": "/vaccine-availability-covid19/static/js/2.1bb7e909.chunk.js.map",
     "index.html": "/vaccine-availability-covid19/index.html",
-    "precache-manifest.992c18ceb7bc88cb85fc6d6043f0d057.js": "/vaccine-availability-covid19/precache-manifest.992c18ceb7bc88cb85fc6d6043f0d057.js",
+    "precache-manifest.94291f896412287fc32010d74cb8a21c.js": "/vaccine-availability-covid19/precache-manifest.94291f896412287fc32010d74cb8a21c.js",
     "service-worker.js": "/vaccine-availability-covid19/service-worker.js",
     "static/css/2.9233ae65.chunk.css.map": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css.map",
-    "static/css/main.13e3f3db.chunk.css.map": "/vaccine-availability-covid19/static/css/main.13e3f3db.chunk.css.map",
-    "static/js/2.9678368d.chunk.js.LICENSE.txt": "/vaccine-availability-covid19/static/js/2.9678368d.chunk.js.LICENSE.txt",
+    "static/css/main.a8ee74d1.chunk.css.map": "/vaccine-availability-covid19/static/css/main.a8ee74d1.chunk.css.map",
+    "static/js/2.1bb7e909.chunk.js.LICENSE.txt": "/vaccine-availability-covid19/static/js/2.1bb7e909.chunk.js.LICENSE.txt",
     "static/media/bmc-button.png": "/vaccine-availability-covid19/static/media/bmc-button.40242a95.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8380c7da.js",
     "static/css/2.9233ae65.chunk.css",
-    "static/js/2.9678368d.chunk.js",
-    "static/css/main.13e3f3db.chunk.css",
-    "static/js/main.ea8232b4.chunk.js"
+    "static/js/2.1bb7e909.chunk.js",
+    "static/css/main.a8ee74d1.chunk.css",
+    "static/js/main.62a2d351.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fc559935359a0771d965d17ec6100bf",
+    "revision": "d1bf35f3e9b405c6c661d536e994f5de",
     "url": "/vaccine-availability-covid19/index.html"
   },
   {
-    "revision": "1876d8d9e8ff0afd60c6",
+    "revision": "50d1942c2e3a0a1b4434",
     "url": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css"
   },
   {
-    "revision": "7ca7a6f3ba0d435435ad",
-    "url": "/vaccine-availability-covid19/static/css/main.13e3f3db.chunk.css"
+    "revision": "1fb233b8d497538631d7",
+    "url": "/vaccine-availability-covid19/static/css/main.a8ee74d1.chunk.css"
   },
   {
-    "revision": "1876d8d9e8ff0afd60c6",
-    "url": "/vaccine-availability-covid19/static/js/2.9678368d.chunk.js"
+    "revision": "50d1942c2e3a0a1b4434",
+    "url": "/vaccine-availability-covid19/static/js/2.1bb7e909.chunk.js"
   },
   {
     "revision": "c87e50d81cc7b5311525cc6fd5482ea5",
-    "url": "/vaccine-availability-covid19/static/js/2.9678368d.chunk.js.LICENSE.txt"
+    "url": "/vaccine-availability-covid19/static/js/2.1bb7e909.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ca7a6f3ba0d435435ad",
-    "url": "/vaccine-availability-covid19/static/js/main.ea8232b4.chunk.js"
+    "revision": "1fb233b8d497538631d7",
+    "url": "/vaccine-availability-covid19/static/js/main.62a2d351.chunk.js"
   },
   {
     "revision": "3134f36ba381c04265fd",
