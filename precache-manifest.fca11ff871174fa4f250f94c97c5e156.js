@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2750db7f1e69789aa5c00d32eae789e3",
+    "revision": "28812100aeab1b07da985b4c4de395d3",
     "url": "/vaccine-availability-covid19/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vaccine-availability-covid19/static/css/2.9233ae65.chunk.css"
   },
   {
-    "revision": "13d996c637690ad06f73",
+    "revision": "69c5529a19b4539a8edd",
     "url": "/vaccine-availability-covid19/static/css/main.a8ee74d1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vaccine-availability-covid19/static/js/2.1bb7e909.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13d996c637690ad06f73",
-    "url": "/vaccine-availability-covid19/static/js/main.7109211e.chunk.js"
+    "revision": "69c5529a19b4539a8edd",
+    "url": "/vaccine-availability-covid19/static/js/main.c6077afc.chunk.js"
   },
   {
     "revision": "3134f36ba381c04265fd",

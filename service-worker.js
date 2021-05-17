@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vaccine-availability-covid19/precache-manifest.033254fe898632f0069febe188bbf13a.js"
+  "/vaccine-availability-covid19/precache-manifest.fca11ff871174fa4f250f94c97c5e156.js"
 );
 
 self.addEventListener('message', (event) => {
