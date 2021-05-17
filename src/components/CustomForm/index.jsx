@@ -3,7 +3,7 @@ import { Formik, Field, ErrorMessage } from "formik";
 import { registerSchema } from "./formValidation";
 import SelectInput from "../common/SelectInput";
 import FormInput from "../common/FormInput";
-import { ageGroupList, stateList, vaccinePrefList } from "../../constants/common";
+import { ageGroupList, stateList, vaccinePrefList, doseList } from "../../constants/common";
 import { apiBaseUrl } from "../../constants/env";
 import Button from "../common/Button";
 
@@ -17,7 +17,8 @@ const formInitialValues = {
   mode: "1",
   state: "",
   district: "",
-  pincode: ""
+  pincode: "",
+  dose: ""
 };
 
 const CustomForm = () => {
@@ -82,6 +83,8 @@ const CustomForm = () => {
             } else if(payload.mode === 2){
               payload.dist_id = values.district?.value;
             }
+            payload.dose = values.dose?.value || "available_capacity_dose1";
+            console.log(payload);
 
             const rawResponse = await fetch(`${apiBaseUrl}/userinfo`, {
               method: "POST",
@@ -161,6 +164,17 @@ const CustomForm = () => {
                 }}
                 options={ageGroupList}
                 error={props.errors.age}
+              />
+
+              <label htmlFor="age">Vaccine Dose</label>
+              <SelectInput
+                placeholder="Select Dose"
+                value={initialValues?.dose}
+                onChange={(selectedOption) =>{
+                  handleSelectChange(props.setFieldValue, "dose", selectedOption);
+                }}
+                options={doseList}
+                error={props.errors.dose}
               />
 
               <label htmlFor="vaccine">Vaccine Preference</label>

@@ -40,12 +40,11 @@ const Unsubscribe= () => {
         >
           {(props) => (
             <form onSubmit={props.handleSubmit}>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email or Telegram Chat ID</label>
               <FormInput
                 id="email"
                 name="email"
-                placeholder="Enter your Email"
-                type="email"
+                placeholder="Enter your Email or Telegram Chat ID"
               />
               <br/>
               {/* <button type="submit" className="btn btn-primary custom-btn">Unsubscribe from Mail</button> */}
